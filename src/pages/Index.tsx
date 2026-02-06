@@ -6,9 +6,11 @@ import Services from '@/components/Services';
 import Differentials from '@/components/Differentials';
 import Comparison from '@/components/Comparison';
 import HumanApproach from '@/components/HumanApproach';
+import Testimonials from '@/components/Testimonials';
 import OfficeGallery from '@/components/OfficeGallery';
 import AboutFirm from '@/components/AboutFirm';
 import FAQ from '@/components/FAQ';
+import BlogNews from '@/components/BlogNews';
 import Contact from '@/components/Contact';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
@@ -26,8 +28,10 @@ const Index = () => {
         <Differentials />
         <Comparison />
         <HumanApproach />
+        <Testimonials />
         <OfficeGallery />
         <AboutFirm />
+        <BlogNews />
         <FAQ />
         <Contact />
         <FinalCTA />
