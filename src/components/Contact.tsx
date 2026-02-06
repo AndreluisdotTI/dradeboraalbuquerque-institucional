@@ -1,9 +1,47 @@
-import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
+import { z } from 'zod';
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, "Nome é obrigatório").max(100),
+  phone: z.string().trim().max(20).optional().default(""),
+  email: z.string().trim().email("E-mail inválido").max(255),
+  area: z.string().trim().max(200).optional().default(""),
+  message: z.string().trim().min(1, "Mensagem é obrigatória").max(2000),
+});
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ name: '', phone: '', email: '', area: '', message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const parsed = contactSchema.safeParse(form);
+    if (!parsed.success) {
+      toast({ title: "Erro", description: parsed.error.errors[0].message, variant: "destructive" });
+      return;
+    }
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: parsed.data,
+      });
+      if (error) throw error;
+      toast({ title: "Enviado!", description: "Sua solicitação foi enviada com sucesso." });
+      setForm({ name: '', phone: '', email: '', area: '', message: '' });
+    } catch (err: any) {
+      toast({ title: "Erro", description: "Não foi possível enviar. Tente novamente.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const contactInfo = [
     {
       icon: MapPin,
@@ -62,7 +100,7 @@ const Contact = () => {
             <h3 className="font-display text-2xl font-medium mb-6">
               Agende uma Consulta
             </h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="font-body text-sm text-foreground/70 mb-2 block">
@@ -70,7 +108,10 @@ const Contact = () => {
                   </label>
                   <Input
                     placeholder="Seu nome"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="bg-background/50 border-border/50 focus:border-primary"
+                    required
                   />
                 </div>
                 <div>
@@ -79,6 +120,8 @@ const Contact = () => {
                   </label>
                   <Input
                     placeholder="(00) 00000-0000"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     className="bg-background/50 border-border/50 focus:border-primary"
                   />
                 </div>
@@ -90,7 +133,10 @@ const Contact = () => {
                 <Input
                   type="email"
                   placeholder="seu@email.com"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="bg-background/50 border-border/50 focus:border-primary"
+                  required
                 />
               </div>
               <div>
@@ -99,6 +145,8 @@ const Contact = () => {
                 </label>
                 <Input
                   placeholder="Trabalhista, Cível, Empresarial, Família..."
+                  value={form.area}
+                  onChange={(e) => setForm({ ...form, area: e.target.value })}
                   className="bg-background/50 border-border/50 focus:border-primary"
                 />
               </div>
@@ -109,12 +157,19 @@ const Contact = () => {
                 <Textarea
                   placeholder="Conte-nos brevemente sobre sua necessidade jurídica..."
                   rows={4}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="bg-background/50 border-border/50 focus:border-primary resize-none"
+                  required
                 />
               </div>
-              <Button variant="gold" className="w-full group">
-                <span>Enviar Solicitação</span>
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button variant="gold" className="w-full group" disabled={loading}>
+                {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : (
+                  <>
+                    <span>Enviar Solicitação</span>
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
