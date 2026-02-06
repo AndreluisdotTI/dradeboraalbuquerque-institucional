@@ -8,10 +8,10 @@ import {
   CarouselNext,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { useRef } from 'react';
+import React from 'react';
 
 const Testimonials = () => {
-  const plugin = useRef(
+  const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: false })
   );
 
