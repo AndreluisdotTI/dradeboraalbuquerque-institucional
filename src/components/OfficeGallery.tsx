@@ -17,7 +17,7 @@ const OfficeGallery = () => {
               Onde <span className="text-accent-gold font-medium">Estamos</span>
             </h2>
             <p className="font-body text-lg text-section-light-foreground/70 leading-relaxed max-w-3xl mx-auto">
-              Atendimento presencial em João Pessoa e online para todo o Brasil.
+              Escritório em João Pessoa com atendimento presencial e online para todo o Brasil.
             </p>
           </AnimatedSection>
 
@@ -81,7 +81,7 @@ const OfficeGallery = () => {
               <div className="group relative overflow-hidden rounded-lg aspect-square">
                 <img
                   src={office1}
-                  alt="Escritório Débora Albuquerque - Sala principal"
+                  alt="Escritório - Recepção"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -90,7 +90,7 @@ const OfficeGallery = () => {
               <div className="group relative overflow-hidden rounded-lg aspect-square">
                 <img
                   src={office2}
-                  alt="Escritório - Espaço de café"
+                  alt="Escritório - Sala de reuniões"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -99,7 +99,7 @@ const OfficeGallery = () => {
               <div className="group relative overflow-hidden rounded-lg aspect-square">
                 <img
                   src={office3}
-                  alt="Escritório - Sala de trabalho"
+                  alt="Escritório - Área de trabalho"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

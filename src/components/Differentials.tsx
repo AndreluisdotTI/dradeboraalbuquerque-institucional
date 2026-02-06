@@ -5,33 +5,33 @@ const Differentials = () => {
   const differentials = [
     {
       icon: Scale,
-      title: 'Especialização Trabalhista',
-      description: 'Atuação focada exclusivamente em direito do trabalho, o que permite um conhecimento aprofundado da área.',
+      title: 'Atuação Multidisciplinar',
+      description: 'Cobertura completa das principais áreas do direito, com equipe especializada em cada segmento.',
     },
     {
       icon: FileText,
-      title: 'Análise Criteriosa',
-      description: 'Examinamos contracheques, registros de ponto, TRCT e cada documento para uma avaliação precisa do caso.',
+      title: 'Rigor Técnico',
+      description: 'Estudo aprofundado de cada caso, com fundamentação sólida e estratégias embasadas na legislação vigente.',
     },
     {
       icon: Clock,
-      title: 'Retorno Ágil',
-      description: 'Valorizamos seu tempo. A análise inicial é realizada com agilidade para que você tenha orientação o quanto antes.',
+      title: 'Agilidade e Eficiência',
+      description: 'Retorno rápido e processos organizados para que você tenha orientação no menor tempo possível.',
     },
     {
       icon: Users,
-      title: 'Atendimento Próximo',
-      description: 'Advogada acessível, que acompanha pessoalmente cada caso com dedicação e empatia.',
+      title: 'Proximidade com o Cliente',
+      description: 'Comunicação direta com os advogados responsáveis, sem intermediários e com linguagem acessível.',
     },
     {
       icon: MapPin,
-      title: 'Presença em João Pessoa',
-      description: 'Escritório físico na capital paraibana, com atendimento presencial e online para sua comodidade.',
+      title: 'Presença Local e Nacional',
+      description: 'Escritório em João Pessoa com atendimento presencial e online para clientes em todo o Brasil.',
     },
     {
       icon: Shield,
-      title: 'Sigilo e Ética',
-      description: 'Seu caso é tratado com total confidencialidade e respeito aos princípios éticos da advocacia.',
+      title: 'Sigilo e Confiança',
+      description: 'Total confidencialidade no tratamento de informações e compromisso ético em todas as relações.',
     },
   ];
 
@@ -44,7 +44,7 @@ const Differentials = () => {
             Por que <span className="text-accent-gold font-medium">nos escolher</span>
           </h2>
           <p className="font-body text-foreground/70">
-            Compromisso com a qualidade técnica, o atendimento humanizado e a transparência em cada etapa.
+            Compromisso com resultados, transparência e um atendimento que faz a diferença.
           </p>
         </AnimatedSection>
 

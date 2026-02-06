@@ -5,28 +5,28 @@ import AnimatedSection from './AnimatedSection';
 const Services = () => {
   const services = [
     {
-      title: 'Verbas Rescisórias',
-      description: 'Análise completa dos valores devidos na rescisão: FGTS, multa de 40%, aviso prévio, férias e 13º salário.',
+      title: 'Consultoria Preventiva',
+      description: 'Orientação jurídica antecipada para evitar litígios e proteger seus interesses pessoais e empresariais.',
     },
     {
-      title: 'Rescisão Indireta',
-      description: 'Orientação para situações em que o trabalhador é levado a pedir demissão por condições inadequadas de trabalho.',
+      title: 'Contencioso Judicial',
+      description: 'Representação completa em processos judiciais, com estratégia personalizada para cada demanda.',
     },
     {
-      title: 'Horas Extras e Adicionais',
-      description: 'Cálculo técnico das horas trabalhadas além da jornada, com os acréscimos legais e reflexos devidos.',
+      title: 'Mediação e Negociação',
+      description: 'Busca de soluções extrajudiciais eficientes, com foco em acordos vantajosos e economia de tempo.',
     },
     {
-      title: 'Revisão de Cálculos',
-      description: 'Conferência minuciosa de cada valor da rescisão para identificar possíveis diferenças a seu favor.',
+      title: 'Contratos e Pareceres',
+      description: 'Elaboração, revisão e análise de contratos, além de pareceres jurídicos para tomada de decisão segura.',
     },
     {
-      title: 'Seguro-Desemprego',
-      description: 'Auxílio na obtenção das guias e documentos necessários quando a empresa não os forneceu corretamente.',
+      title: 'Compliance e Governança',
+      description: 'Estruturação de programas de conformidade legal, políticas internas e adequação regulatória.',
     },
     {
-      title: 'Acompanhamento Processual',
-      description: 'Acompanhamento dedicado de todo o processo, com atualização constante sobre cada etapa ao cliente.',
+      title: 'Atendimento a Empresas',
+      description: 'Assessoria jurídica permanente para pequenas, médias e grandes empresas em todas as áreas do direito.',
     },
   ];
 
@@ -36,10 +36,10 @@ const Services = () => {
         <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
           <div className="line-gold mx-auto mb-6" />
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-white">
-            Áreas de <span className="text-gold font-medium">Atuação</span>
+            Nossos <span className="text-gold font-medium">Serviços</span>
           </h2>
           <p className="font-body text-white/70">
-            Atendimento jurídico especializado nas principais demandas trabalhistas.
+            Soluções jurídicas completas para atender às necessidades de pessoas e empresas com excelência.
           </p>
         </AnimatedSection>
 

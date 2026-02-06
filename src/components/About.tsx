@@ -4,28 +4,28 @@ import AnimatedSection from './AnimatedSection';
 import deboraImg from '@/assets/debora-about.png';
 
 const About = () => {
-  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20uma%20an%C3%A1lise%20personalizada%20do%20meu%20caso%20trabalhista.%20Aguardo%20retorno.';
+  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%20Aguardo%20retorno.';
 
   const pillars = [
     {
       icon: Target,
-      title: 'Análise Detalhada',
-      description: 'Examinamos cada documento da sua rescisão com atenção para identificar possíveis irregularidades.',
+      title: 'Visão Estratégica',
+      description: 'Analisamos cada caso sob múltiplas perspectivas para encontrar a solução mais eficiente e segura.',
     },
     {
       icon: FileCheck,
-      title: 'Orientação Clara',
-      description: 'Explicamos seu caso de forma transparente, com linguagem acessível e sem jargões desnecessários.',
+      title: 'Excelência Técnica',
+      description: 'Equipe em constante atualização, com domínio aprofundado das legislações e jurisprudências vigentes.',
     },
     {
       icon: Shield,
-      title: 'Atuação Responsável',
-      description: 'Apresentamos um diagnóstico honesto: o que pode ser buscado, os caminhos possíveis e os prazos envolvidos.',
+      title: 'Ética e Transparência',
+      description: 'Diagnóstico honesto sobre riscos, custos e possibilidades. Sem surpresas, sem promessas vazias.',
     },
     {
       icon: Users,
-      title: 'Atendimento Humanizado',
-      description: 'Você fala diretamente com a advogada responsável pelo caso. Acolhimento e atenção em cada etapa.',
+      title: 'Atendimento Personalizado',
+      description: 'Cada cliente é único. Oferecemos atenção individualizada e comunicação acessível em todas as etapas.',
     },
   ];
 
@@ -35,11 +35,11 @@ const About = () => {
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <div className="line-gold mx-auto mb-6" />
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-            Como <span className="text-accent-gold font-medium">Atuamos</span>
+            O <span className="text-accent-gold font-medium">Escritório</span>
           </h2>
           <p className="font-body text-lg text-foreground/70">
-            Atendimento jurídico especializado em direito do trabalho, 
-            com foco na escuta atenta e na orientação responsável.
+            Somos um escritório de advocacia com atuação multidisciplinar, 
+            comprometido com a excelência técnica e o atendimento humanizado.
           </p>
         </AnimatedSection>
 
@@ -54,7 +54,7 @@ const About = () => {
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-gold rounded-br-lg" />
               <img 
                 src={deboraImg} 
-                alt="Dra. Débora Albuquerque - Advogada Trabalhista" 
+                alt="Débora Albuquerque Advocacia - Escritório" 
                 className="relative rounded-lg shadow-elegant max-w-sm w-full object-cover"
               />
             </div>
@@ -86,7 +86,7 @@ const About = () => {
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
               <MessageCircle className="h-5 w-5 flex-shrink-0" />
-              <span className="truncate">Agendar Análise do Caso</span>
+              <span className="truncate">Agende uma Consulta</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 flex-shrink-0 hidden sm:block" />
             </a>
           </Button>

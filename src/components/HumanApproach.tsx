@@ -3,17 +3,17 @@ import { Button } from '@/components/ui/button';
 import AnimatedSection from './AnimatedSection';
 
 const HumanApproach = () => {
-  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20uma%20an%C3%A1lise%20personalizada%20do%20meu%20caso%20trabalhista.%20Aguardo%20retorno.';
+  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%20Aguardo%20retorno.';
 
   const commitments = [
-    'Análise personalizada de cada detalhe do seu caso',
-    'Orientação clara e responsável sobre seus direitos e possibilidades',
-    'Acompanhamento próximo e humanizado em todas as etapas',
-    'Comunicação transparente sobre prazos, valores e andamento do processo',
+    'Estudo aprofundado e individualizado de cada demanda',
+    'Transparência total sobre custos, prazos e expectativas',
+    'Comunicação acessível e acompanhamento próximo em todas as fases',
+    'Atuação ética, responsável e focada nos melhores resultados',
   ];
 
   const notOffered = [
-    'Promessas de resultados sem antes analisar cuidadosamente seus documentos',
+    'Promessas de resultado sem uma análise técnica prévia e detalhada',
   ];
 
   return (
@@ -23,10 +23,10 @@ const HumanApproach = () => {
           <AnimatedSection className="text-center mb-12">
             <div className="line-gold mx-auto mb-6" />
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-primary">
-              Nosso <span className="text-accent-gold font-medium">Compromisso com Você</span>
+              Nosso <span className="text-accent-gold font-medium">Compromisso</span>
             </h2>
             <p className="font-body text-xl text-foreground/70">
-              Transparência e responsabilidade em cada orientação. Seu caso merece atenção individualizada.
+              Construímos relações de confiança com cada cliente, baseadas em ética e transparência.
             </p>
           </AnimatedSection>
 
@@ -71,7 +71,7 @@ const HumanApproach = () => {
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <MessageCircle className="h-5 w-5 flex-shrink-0" />
-                <span className="truncate">Falar com a Advogada</span>
+                <span className="truncate">Fale com Nossa Equipe</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 flex-shrink-0 hidden sm:block" />
               </a>
             </Button>
