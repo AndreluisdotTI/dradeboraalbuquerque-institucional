@@ -1,7 +1,20 @@
 import { Star, Quote } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import { useRef } from 'react';
 
 const Testimonials = () => {
+  const plugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false })
+  );
+
   const testimonials = [
     {
       name: 'Carlos Eduardo M.',
@@ -54,26 +67,36 @@ const Testimonials = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map((item, index) => (
-            <AnimatedSection key={index} delay={index * 100}>
-              <div className="bg-card border border-border p-6 rounded-lg shadow-sm h-full flex flex-col">
-                <Quote className="h-8 w-8 text-accent-gold/30 mb-4 flex-shrink-0" />
-                <p className="font-body text-foreground/70 leading-relaxed mb-6 flex-1 italic">
-                  "{item.text}"
-                </p>
-                <div className="flex items-center gap-1 mb-3">
-                  {Array.from({ length: item.rating }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-accent-gold text-accent-gold" />
-                  ))}
-                </div>
-                <div>
-                  <p className="font-display text-base font-medium">{item.name}</p>
-                  <p className="font-body text-sm text-foreground/50">{item.role}</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
+        <div className="max-w-6xl mx-auto px-12">
+          <Carousel
+            opts={{ align: 'start', loop: true }}
+            plugins={[plugin.current]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {testimonials.map((item, index) => (
+                <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-card border border-border p-6 rounded-lg shadow-sm h-full flex flex-col">
+                    <Quote className="h-8 w-8 text-accent-gold/30 mb-4 flex-shrink-0" />
+                    <p className="font-body text-foreground/70 leading-relaxed mb-6 flex-1 italic">
+                      "{item.text}"
+                    </p>
+                    <div className="flex items-center gap-1 mb-3">
+                      {Array.from({ length: item.rating }).map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-accent-gold text-accent-gold" />
+                      ))}
+                    </div>
+                    <div>
+                      <p className="font-display text-base font-medium">{item.name}</p>
+                      <p className="font-body text-sm text-foreground/50">{item.role}</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
