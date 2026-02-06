@@ -6,14 +6,15 @@ const Footer = () => {
 
   const links = {
     services: [
-      { label: 'Verbas Rescisórias', href: '#servicos' },
-      { label: 'Rescisão Indireta', href: '#servicos' },
-      { label: 'Revisão de Cálculos', href: '#servicos' },
-      { label: 'Horas Extras', href: '#servicos' },
+      { label: 'Direito Trabalhista', href: '#areas' },
+      { label: 'Direito Cível', href: '#areas' },
+      { label: 'Direito Empresarial', href: '#areas' },
+      { label: 'Direito de Família', href: '#areas' },
     ],
     institutional: [
-      { label: 'Como Atuamos', href: '#sobre' },
+      { label: 'O Escritório', href: '#sobre' },
       { label: 'Diferenciais', href: '#diferenciais' },
+      { label: 'Equipe', href: '#equipe' },
       { label: 'Contato', href: '#contato' },
     ],
   };
@@ -31,8 +32,8 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <img src={logo} alt="Débora Albuquerque Advocacia" className="h-10 mb-6" />
             <p className="font-body text-sm text-white/60 leading-relaxed">
-              Advocacia trabalhista humanizada e especializada. 
-              Orientação clara e responsável para quem busca seus direitos.
+              Advocacia multidisciplinar com excelência técnica e atendimento humanizado. 
+              Soluções jurídicas completas para pessoas e empresas.
             </p>
             <p className="font-body text-sm text-white/50 mt-4">
               Rua Presidente Nilo Peçanha, nº 791<br />
@@ -41,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-display text-lg font-medium mb-4 text-white">Serviços</h4>
+            <h4 className="font-display text-lg font-medium mb-4 text-white">Áreas de Atuação</h4>
             <ul className="space-y-3">
               {links.services.map((link) => (
                 <li key={link.label}>

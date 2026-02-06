@@ -1,56 +1,56 @@
-import { Briefcase, FileText, Clock, UserX, AlertTriangle, Scale } from 'lucide-react';
+import { Briefcase, Home, Building2, Users, ShoppingCart, Receipt } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const Problems = () => {
-  const situations = [
-    {
-      icon: UserX,
-      title: 'Demissão sem Justa Causa',
-      description: 'Se você foi dispensado sem justa causa, existem direitos específicos garantidos por lei. Podemos orientar você sobre cada um deles.',
-    },
-    {
-      icon: FileText,
-      title: 'Verbas Rescisórias Incorretas',
-      description: 'Nem sempre os valores pagos na rescisão estão corretos. Uma análise detalhada pode identificar diferenças a seu favor.',
-    },
-    {
-      icon: Clock,
-      title: 'Horas Extras Não Remuneradas',
-      description: 'Trabalhou além da jornada contratual? Você pode ter direito ao pagamento com os acréscimos previstos em lei.',
-    },
+  const areas = [
     {
       icon: Briefcase,
-      title: 'Seguro-Desemprego Retido',
-      description: 'Se a empresa não forneceu os documentos necessários, podemos ajudar a viabilizar o acesso ao seguro-desemprego.',
+      title: 'Direito Trabalhista',
+      description: 'Rescisões, verbas trabalhistas, horas extras, rescisão indireta, FGTS e defesa em reclamações para empresas e trabalhadores.',
     },
     {
-      icon: AlertTriangle,
-      title: 'Pedido de Demissão Forçado',
-      description: 'Situações de pressão para pedir demissão podem configurar rescisão indireta, assegurando seus direitos integrais.',
+      icon: Home,
+      title: 'Direito de Família',
+      description: 'Divórcio, pensão alimentícia, guarda de filhos, inventário, partilha de bens e planejamento sucessório.',
     },
     {
-      icon: Scale,
-      title: 'FGTS Não Depositado',
-      description: 'A ausência de depósitos do FGTS é uma irregularidade grave. Orientamos sobre como buscar a regularização.',
+      icon: Building2,
+      title: 'Direito Empresarial',
+      description: 'Contratos comerciais, constituição de empresas, recuperação de crédito, compliance e consultoria preventiva.',
+    },
+    {
+      icon: Users,
+      title: 'Direito Civil',
+      description: 'Responsabilidade civil, contratos, indenizações, cobranças, questões imobiliárias e direito de vizinhança.',
+    },
+    {
+      icon: ShoppingCart,
+      title: 'Direito do Consumidor',
+      description: 'Defesa em relações de consumo, cobranças indevidas, vícios de produtos e serviços, negativação indevida.',
+    },
+    {
+      icon: Receipt,
+      title: 'Direito Tributário',
+      description: 'Planejamento tributário, defesa em execuções fiscais, recuperação de tributos e consultoria fiscal.',
     },
   ];
 
   return (
-    <section id="problemas" className="py-24 bg-secondary/30">
+    <section id="areas" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <div className="line-gold mx-auto mb-6" />
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-            Você se identifica com <span className="text-accent-gold font-medium">alguma dessas situações?</span>
+            Áreas de <span className="text-accent-gold font-medium">Atuação</span>
           </h2>
           <p className="font-body text-lg text-foreground/70">
-            São questões comuns enfrentadas por trabalhadores que foram desligados. 
-            Entenda seus direitos e saiba como podemos ajudar.
+            Assessoria jurídica completa e multidisciplinar para pessoas físicas e jurídicas, 
+            cobrindo as principais demandas do direito brasileiro.
           </p>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {situations.map((item, index) => (
+          {areas.map((item, index) => (
             <AnimatedSection key={index} delay={index * 100}>
               <div className="bg-card border border-border p-6 rounded-lg hover-accent group shadow-sm h-full">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">

@@ -7,7 +7,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20uma%20an%C3%A1lise%20personalizada%20do%20meu%20caso%20trabalhista.%20Aguardo%20retorno.';
+  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%20Aguardo%20retorno.';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +19,10 @@ const Header = () => {
 
   const navItems = [
     { label: 'Início', href: '#inicio' },
-    { label: 'Seus Direitos', href: '#problemas' },
-    { label: 'Como Atuamos', href: '#sobre' },
-    { label: 'Serviços', href: '#servicos' },
+    { label: 'O Escritório', href: '#sobre' },
+    { label: 'Áreas de Atuação', href: '#areas' },
     { label: 'Diferenciais', href: '#diferenciais' },
+    { label: 'Equipe', href: '#equipe' },
     { label: 'Contato', href: '#contato' },
   ];
 
@@ -55,7 +55,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center">
           <Button variant="gold" size="sm" asChild>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              Falar com Advogada
+              Fale Conosco
             </a>
           </Button>
         </div>
@@ -85,7 +85,7 @@ const Header = () => {
             ))}
             <Button variant="gold" size="sm" className="mt-4" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                Falar com Advogada
+                Fale Conosco
               </a>
             </Button>
           </nav>

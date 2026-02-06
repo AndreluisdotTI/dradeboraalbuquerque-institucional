@@ -37,8 +37,8 @@ const Contact = () => {
               Entre em <span className="text-accent-gold font-medium">Contato</span>
             </h2>
             <p className="font-body text-foreground/70 leading-relaxed mb-12">
-              Agende uma análise personalizada do seu caso trabalhista. 
-              Atendimento humanizado com orientação clara e responsável.
+              Agende uma consulta ou tire suas dúvidas. Estamos prontos para 
+              orientar você com clareza e responsabilidade.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8">
@@ -60,7 +60,7 @@ const Contact = () => {
 
           <div className="bg-card border border-border p-8 rounded-lg shadow-sm">
             <h3 className="font-display text-2xl font-medium mb-6">
-              Solicite uma Análise
+              Agende uma Consulta
             </h3>
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
@@ -95,19 +95,19 @@ const Contact = () => {
               </div>
               <div>
                 <label className="font-body text-sm text-foreground/70 mb-2 block">
-                  Assunto
+                  Área de Interesse
                 </label>
                 <Input
-                  placeholder="Rescisão, horas extras, vínculo empregatício..."
+                  placeholder="Trabalhista, Cível, Empresarial, Família..."
                   className="bg-background/50 border-border/50 focus:border-primary"
                 />
               </div>
               <div>
                 <label className="font-body text-sm text-foreground/70 mb-2 block">
-                  Descrição do Caso
+                  Descreva sua Demanda
                 </label>
                 <Textarea
-                  placeholder="Descreva brevemente sua situação trabalhista..."
+                  placeholder="Conte-nos brevemente sobre sua necessidade jurídica..."
                   rows={4}
                   className="bg-background/50 border-border/50 focus:border-primary resize-none"
                 />

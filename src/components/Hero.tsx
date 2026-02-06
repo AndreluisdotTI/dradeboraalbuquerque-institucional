@@ -4,7 +4,7 @@ import heroDesktop from '@/assets/hero-desktop-new.png';
 import heroMobile from '@/assets/hero-mobile-new.png';
 import InteractiveBackground from './InteractiveBackground';
 const Hero = () => {
-  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20uma%20an%C3%A1lise%20personalizada%20do%20meu%20caso%20trabalhista.%20Aguardo%20retorno.';
+  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%20Aguardo%20retorno.';
   return <section id="inicio" className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background Image - Desktop */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block" style={{
@@ -25,25 +25,25 @@ const Hero = () => {
           <div className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-8 animate-fade-up">
             <Scale className="h-4 w-4 text-gold" />
             <span className="text-sm font-body tracking-wider text-gold">
-              Direito do Trabalho Especializado em João Pessoa, PB
+              Assessoria Jurídica Completa em João Pessoa, PB
             </span>
           </div>
 
           {/* Title */}
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight mb-4 md:mb-6 animate-fade-up delay-100 text-white drop-shadow-lg">
-            Foi demitido?{' '}
-            <span className="text-gold font-medium block md:inline">Conheça seus direitos.</span>
+            Soluções jurídicas{' '}
+            <span className="text-gold font-medium block md:inline">para cada fase da sua vida.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="hidden md:block font-display text-2xl text-white/90 mb-4 animate-fade-up delay-150 drop-shadow-md">
-            Atendimento jurídico especializado e humanizado.
+            Advocacia multidisciplinar, estratégica e humanizada.
           </p>
 
           {/* Description */}
           <p className="font-body text-sm md:text-xl text-white/70 leading-relaxed max-w-xl mx-auto md:mx-0 md:ml-auto animate-fade-up delay-150 md:delay-200 drop-shadow-md font-semibold">
-            Analisamos seu caso com atenção e responsabilidade para orientar 
-            você sobre FGTS, verbas rescisórias, horas extras e todos os seus direitos trabalhistas.
+            Atuação completa nas áreas Trabalhista, Cível, Empresarial, Família, 
+            Consumidor e Tributária. Orientação clara e responsável para pessoas e empresas.
           </p>
 
           {/* CTA Button - Desktop only */}
@@ -51,7 +51,7 @@ const Hero = () => {
             <Button variant="gold" size="lg" className="group text-lg px-8 py-6" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <MessageCircle className="h-5 w-5 flex-shrink-0" />
-                <span className="truncate">Análise Personalizada do Caso</span>
+                <span className="truncate">Agende sua Consulta</span>
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 flex-shrink-0" />
               </a>
             </Button>
@@ -71,7 +71,7 @@ const Hero = () => {
               <Button variant="gold" size="lg" className="group text-base px-6 py-5 w-full sm:w-auto" asChild>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                   <MessageCircle className="h-5 w-5 flex-shrink-0" />
-                  <span className="truncate">Análise Personalizada do Caso</span>
+                  <span className="truncate">Agende sua Consulta</span>
                 </a>
               </Button>
             </div>

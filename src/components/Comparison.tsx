@@ -3,32 +3,32 @@ import { Button } from '@/components/ui/button';
 import AnimatedSection from './AnimatedSection';
 
 const Comparison = () => {
-  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20uma%20an%C3%A1lise%20personalizada%20do%20meu%20caso%20trabalhista.%20Aguardo%20retorno.';
+  const whatsappLink = 'https://api.whatsapp.com/send?phone=5583993688733&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%20Aguardo%20retorno.';
 
   const process = [
     {
       icon: FileText,
       step: '01',
-      title: 'Envie seus Documentos',
-      description: 'CTPS, contracheques, termo de rescisão. Envie o que tiver disponível para análise.',
+      title: 'Primeiro Contato',
+      description: 'Entre em contato pelo WhatsApp ou formulário. Ouviremos sua demanda e agendaremos uma reunião.',
     },
     {
       icon: Calculator,
       step: '02',
-      title: 'Análise Personalizada',
-      description: 'Examinamos cada detalhe para identificar seus direitos e possíveis valores devidos.',
+      title: 'Análise do Caso',
+      description: 'Estudamos os documentos e detalhes da situação para compreender o cenário completo.',
     },
     {
       icon: Scale,
       step: '03',
-      title: 'Orientação Jurídica',
-      description: 'Apresentamos um parecer claro sobre as opções disponíveis e os caminhos mais adequados.',
+      title: 'Estratégia Jurídica',
+      description: 'Apresentamos um plano de ação claro, com opções, prazos, custos e expectativas realistas.',
     },
     {
       icon: Gavel,
       step: '04',
-      title: 'Acompanhamento Dedicado',
-      description: 'Conduzimos seu caso com atenção em cada fase, mantendo você informado sobre todo o andamento.',
+      title: 'Execução e Acompanhamento',
+      description: 'Conduzimos o caso com dedicação, mantendo você informado sobre cada etapa do processo.',
     },
   ];
 
@@ -39,10 +39,10 @@ const Comparison = () => {
           <AnimatedSection className="text-center mb-16">
             <div className="line-gold mx-auto mb-6" />
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-primary">
-              4 Passos para <span className="text-accent-gold font-medium">Cuidar dos Seus Direitos</span>
+              Como <span className="text-accent-gold font-medium">Funciona</span>
             </h2>
             <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-              Um processo simples e transparente, do primeiro contato até a resolução do caso.
+              Um processo transparente e organizado, do primeiro contato à resolução da sua demanda.
             </p>
           </AnimatedSection>
 
@@ -74,7 +74,7 @@ const Comparison = () => {
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <MessageCircle className="h-5 w-5 flex-shrink-0" />
-                <span className="truncate">Solicitar Análise do Caso</span>
+                <span className="truncate">Agende sua Consulta</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 flex-shrink-0 hidden sm:block" />
               </a>
             </Button>

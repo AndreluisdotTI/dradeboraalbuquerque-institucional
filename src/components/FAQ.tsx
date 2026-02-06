@@ -9,24 +9,28 @@ import AnimatedSection from './AnimatedSection';
 const FAQ = () => {
   const faqs = [
     {
-      question: 'Fui demitido sem justa causa. Quais são meus direitos?',
-      answer: 'Na demissão sem justa causa, você pode ter direito a: saldo de salário, aviso prévio (trabalhado ou indenizado), férias proporcionais + 1/3, 13º proporcional, multa de 40% do FGTS, saque do FGTS e guias para seguro-desemprego. Uma análise individual pode esclarecer cada item do seu caso.',
+      question: 'Quais áreas do direito o escritório atende?',
+      answer: 'Atuamos de forma multidisciplinar nas áreas Trabalhista, Cível, Empresarial, Família e Sucessões, Direito do Consumidor e Tributário. Oferecemos tanto consultoria preventiva quanto contencioso judicial.',
     },
     {
-      question: 'Acho que minha rescisão foi calculada incorretamente. O que fazer?',
-      answer: 'Reúna seus documentos (CTPS, contracheques, TRCT, extrato do FGTS) e agende uma análise. Faremos uma conferência detalhada de cada valor e, se houver diferenças, orientaremos sobre as medidas cabíveis.',
+      question: 'O escritório atende pessoas físicas e jurídicas?',
+      answer: 'Sim. Prestamos assessoria jurídica completa tanto para pessoas físicas quanto para empresas de todos os portes, com soluções personalizadas para cada perfil de cliente.',
     },
     {
-      question: 'Qual o prazo para buscar meus direitos após a demissão?',
-      answer: 'O prazo para ingressar com ação trabalhista é de até 2 anos após o desligamento, podendo pleitear direitos dos últimos 5 anos de trabalho. Por isso, é importante buscar orientação jurídica o quanto antes.',
+      question: 'Como funciona o primeiro atendimento?',
+      answer: 'O primeiro contato pode ser feito pelo WhatsApp ou formulário do site. Agendamos uma reunião (presencial ou online) para ouvir sua demanda, analisar a documentação e apresentar as opções jurídicas disponíveis.',
     },
     {
-      question: 'Me senti pressionado a pedir demissão. Tenho algum direito?',
-      answer: 'Situações de pressão ou condições inadequadas de trabalho podem, em determinados casos, configurar rescisão indireta. Nessa hipótese, os direitos podem ser equiparados aos de uma demissão sem justa causa. Cada caso precisa ser analisado individualmente.',
+      question: 'O atendimento é apenas presencial?',
+      answer: 'Não. Além do atendimento presencial em nosso escritório em João Pessoa/PB, realizamos consultas online por videoconferência para clientes de qualquer região do Brasil.',
     },
     {
-      question: 'Como funciona o atendimento?',
-      answer: 'O primeiro contato é feito pelo WhatsApp, onde agendamos uma conversa para entender sua situação. Após a análise dos documentos, apresentamos um parecer claro sobre seus direitos e as opções disponíveis. O atendimento pode ser presencial em João Pessoa ou online.',
+      question: 'Como são definidos os honorários?',
+      answer: 'Os honorários são definidos de forma transparente após a análise do caso, considerando a complexidade da demanda, o tempo estimado e a modalidade de atuação. Apresentamos uma proposta clara antes de iniciar qualquer trabalho.',
+    },
+    {
+      question: 'O escritório oferece consultoria preventiva para empresas?',
+      answer: 'Sim. Oferecemos planos de assessoria jurídica permanente para empresas, incluindo análise de contratos, consultoria trabalhista, compliance e suporte em questões do dia a dia empresarial.',
     },
   ];
 
@@ -40,7 +44,7 @@ const FAQ = () => {
               Perguntas <span className="text-accent-gold font-medium">Frequentes</span>
             </h2>
             <p className="font-body text-lg text-foreground/70">
-              Esclarecimentos sobre os direitos trabalhistas mais comuns em casos de demissão.
+              Tire suas dúvidas sobre nossos serviços e forma de atuação.
             </p>
           </AnimatedSection>
 
