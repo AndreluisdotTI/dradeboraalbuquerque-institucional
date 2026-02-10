@@ -43,7 +43,7 @@ const Hero = () => {
           {/* Description */}
           <p className="font-body text-sm md:text-xl text-white/70 leading-relaxed max-w-xl mx-auto md:mx-0 md:ml-auto animate-fade-up delay-150 md:delay-200 drop-shadow-md font-semibold">
             Atuação completa nas áreas Trabalhista, Cível, Empresarial, Família, 
-            Consumidor e Tributária. Orientação clara e responsável para pessoas e empresas.
+            Consumidor e Previdenciária. Orientação clara e responsável para pessoas e empresas.
           </p>
 
           {/* CTA Button - Desktop only */}
