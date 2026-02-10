@@ -1,10 +1,11 @@
-import { Briefcase, Home, Users, ShoppingCart, Landmark } from 'lucide-react';
+import { Briefcase, Home, Users, ShoppingCart, Landmark, ShieldCheck } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import areaTrabalhista from '@/assets/area-trabalhista.jpg';
 import areaFamilia from '@/assets/area-familia.jpg';
 import areaCivil from '@/assets/area-civil.jpg';
 import areaConsumidor from '@/assets/area-consumidor.jpg';
 import areaBancario from '@/assets/area-bancario.jpg';
+import areaPrevidenciario from '@/assets/area-previdenciario.jpg';
 
 const Problems = () => {
   const areas = [
@@ -37,6 +38,12 @@ const Problems = () => {
       title: 'Direito Bancário',
       description: 'Superendividamento, juros abusivos, fraudes bancárias, revisão de contratos e defesa do consumidor financeiro.',
       image: areaBancario,
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Direito Previdenciário',
+      description: 'Aposentadoria, BPC/LOAS, auxílio-acidente, salário-maternidade e demais benefícios previdenciários.',
+      image: areaPrevidenciario,
     },
   ];
 
