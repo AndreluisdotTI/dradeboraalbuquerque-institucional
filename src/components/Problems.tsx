@@ -1,11 +1,10 @@
-import { Briefcase, Home, Building2, Users, ShoppingCart, Receipt } from 'lucide-react';
+import { Briefcase, Home, Users, ShoppingCart, Landmark } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import areaTrabalhista from '@/assets/area-trabalhista.jpg';
 import areaFamilia from '@/assets/area-familia.jpg';
-import areaEmpresarial from '@/assets/area-empresarial.jpg';
 import areaCivil from '@/assets/area-civil.jpg';
 import areaConsumidor from '@/assets/area-consumidor.jpg';
-import areaTributario from '@/assets/area-tributario.jpg';
+import areaBancario from '@/assets/area-bancario.jpg';
 
 const Problems = () => {
   const areas = [
@@ -22,12 +21,6 @@ const Problems = () => {
       image: areaFamilia,
     },
     {
-      icon: Building2,
-      title: 'Direito Empresarial',
-      description: 'Contratos comerciais, constituição de empresas, recuperação de crédito, compliance e consultoria preventiva.',
-      image: areaEmpresarial,
-    },
-    {
       icon: Users,
       title: 'Direito Civil',
       description: 'Responsabilidade civil, contratos, indenizações, cobranças, questões imobiliárias e direito de vizinhança.',
@@ -40,10 +33,10 @@ const Problems = () => {
       image: areaConsumidor,
     },
     {
-      icon: Receipt,
-      title: 'Direito Tributário',
-      description: 'Planejamento tributário, defesa em execuções fiscais, recuperação de tributos e consultoria fiscal.',
-      image: areaTributario,
+      icon: Landmark,
+      title: 'Direito Bancário',
+      description: 'Superendividamento, juros abusivos, fraudes bancárias, revisão de contratos e defesa do consumidor financeiro.',
+      image: areaBancario,
     },
   ];
 
