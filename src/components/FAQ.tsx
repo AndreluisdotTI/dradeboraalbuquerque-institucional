@@ -10,7 +10,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Quais áreas do direito o escritório atende?',
-      answer: 'Atuamos de forma multidisciplinar nas áreas Trabalhista, Cível, Empresarial, Família e Sucessões, Direito do Consumidor e Tributário. Oferecemos tanto consultoria preventiva quanto contencioso judicial.',
+      answer: 'Atuamos de forma multidisciplinar nas áreas Trabalhista, Cível, Empresarial, Família e Sucessões, Direito do Consumidor e Previdenciário. Oferecemos tanto consultoria preventiva quanto contencioso judicial.',
     },
     {
       question: 'O escritório atende pessoas físicas e jurídicas?',
