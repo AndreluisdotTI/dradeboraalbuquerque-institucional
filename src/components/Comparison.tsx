@@ -33,15 +33,15 @@ const Comparison = () => {
   ];
 
   return (
-    <section className="py-24 bg-section-pattern">
+    <section className="py-24 section-navy">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <div className="line-gold mx-auto mb-6" />
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-primary">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-white">
               Como <span className="text-accent-gold font-medium">Funciona</span>
             </h2>
-            <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="font-body text-lg text-white/70 max-w-2xl mx-auto">
               Um processo transparente e organizado, do primeiro contato à resolução da sua demanda.
             </p>
           </AnimatedSection>
@@ -49,15 +49,15 @@ const Comparison = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {process.map((item, index) => (
               <AnimatedSection key={item.step} delay={index * 100}>
-                <div className="bg-card border border-border p-6 rounded-lg text-center relative hover-accent shadow-sm h-full">
-                  <span className="font-display text-5xl font-bold text-primary/5 absolute top-2 right-4">
+                <div className="bg-white/5 border border-white/10 p-6 rounded-lg text-center relative hover:border-gold/40 transition-all duration-300 shadow-sm h-full">
+                  <span className="font-display text-5xl font-bold text-white/5 absolute top-2 right-4">
                     {item.step}
                   </span>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-lg bg-white/10 flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="h-6 w-6 text-gold" />
                   </div>
-                  <h3 className="font-display text-lg font-medium mb-2 text-primary">{item.title}</h3>
-                  <p className="font-body text-sm text-foreground/70">
+                  <h3 className="font-display text-lg font-medium mb-2 text-white">{item.title}</h3>
+                  <p className="font-body text-sm text-white/60">
                     {item.description}
                   </p>
                 </div>

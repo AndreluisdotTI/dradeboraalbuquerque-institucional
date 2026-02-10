@@ -8,15 +8,15 @@ import office4 from '@/assets/office-4.jpeg';
 
 const OfficeGallery = () => {
   return (
-    <section className="py-24 bg-section-pattern">
+    <section className="py-24 section-navy">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <div className="line-gold mx-auto mb-6" />
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-section-light-foreground">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-white">
               Onde <span className="text-accent-gold font-medium">Estamos</span>
             </h2>
-            <p className="font-body text-lg text-section-light-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="font-body text-lg text-white/70 leading-relaxed max-w-3xl mx-auto">
               Escritório em João Pessoa com atendimento presencial e online para todo o Brasil.
             </p>
           </AnimatedSection>
@@ -74,7 +74,7 @@ const OfficeGallery = () => {
 
           {/* Office Photos Gallery */}
           <AnimatedSection className="mt-8" delay={300}>
-            <h3 className="font-display text-2xl text-center mb-8 text-primary">
+            <h3 className="font-display text-2xl text-center mb-8 text-white">
               Nosso Espaço
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
