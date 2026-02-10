@@ -1,5 +1,11 @@
 import { Briefcase, Home, Building2, Users, ShoppingCart, Receipt } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import areaTrabalhista from '@/assets/area-trabalhista.jpg';
+import areaFamilia from '@/assets/area-familia.jpg';
+import areaEmpresarial from '@/assets/area-empresarial.jpg';
+import areaCivil from '@/assets/area-civil.jpg';
+import areaConsumidor from '@/assets/area-consumidor.jpg';
+import areaTributario from '@/assets/area-tributario.jpg';
 
 const Problems = () => {
   const areas = [
@@ -7,31 +13,37 @@ const Problems = () => {
       icon: Briefcase,
       title: 'Direito Trabalhista',
       description: 'Rescisões, verbas trabalhistas, horas extras, rescisão indireta, FGTS e defesa em reclamações para empresas e trabalhadores.',
+      image: areaTrabalhista,
     },
     {
       icon: Home,
       title: 'Direito de Família',
       description: 'Divórcio, pensão alimentícia, guarda de filhos, inventário, partilha de bens e planejamento sucessório.',
+      image: areaFamilia,
     },
     {
       icon: Building2,
       title: 'Direito Empresarial',
       description: 'Contratos comerciais, constituição de empresas, recuperação de crédito, compliance e consultoria preventiva.',
+      image: areaEmpresarial,
     },
     {
       icon: Users,
       title: 'Direito Civil',
       description: 'Responsabilidade civil, contratos, indenizações, cobranças, questões imobiliárias e direito de vizinhança.',
+      image: areaCivil,
     },
     {
       icon: ShoppingCart,
       title: 'Direito do Consumidor',
       description: 'Defesa em relações de consumo, cobranças indevidas, vícios de produtos e serviços, negativação indevida.',
+      image: areaConsumidor,
     },
     {
       icon: Receipt,
       title: 'Direito Tributário',
       description: 'Planejamento tributário, defesa em execuções fiscais, recuperação de tributos e consultoria fiscal.',
+      image: areaTributario,
     },
   ];
 
@@ -52,14 +64,24 @@ const Problems = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {areas.map((item, index) => (
             <AnimatedSection key={index} delay={index * 100}>
-              <div className="bg-card border border-border p-6 rounded-lg hover-accent group shadow-sm h-full">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="h-6 w-6 text-primary" />
+              <div className="bg-card border border-border rounded-lg hover-accent group shadow-sm h-full overflow-hidden">
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                  <div className="absolute bottom-3 left-4 flex items-center gap-2">
+                    <item.icon className="h-5 w-5 text-white" />
+                    <h3 className="font-display text-lg font-medium text-white">{item.title}</h3>
+                  </div>
                 </div>
-                <h3 className="font-display text-xl font-medium mb-2">{item.title}</h3>
-                <p className="font-body text-foreground/70 leading-relaxed">
-                  {item.description}
-                </p>
+                <div className="p-5">
+                  <p className="font-body text-foreground/70 leading-relaxed text-sm">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </AnimatedSection>
           ))}
